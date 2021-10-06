@@ -35,11 +35,12 @@ Do the following:
 
    HINT: no function required
 */
-let hair = Curly;
-let style = straight;
-if (curly) hair && style == straight;
-
-
+let hair = "curly";
+let style = "straight";
+if (style === "straight"){
+  hair="straight"
+} 
+console.log("task 1B",hair);
 
 
 
@@ -53,9 +54,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-let = "1999";
-Math.floor(1999);
-console.log(1999);
+let year= "1999";
+Math.floor(year);
+console.log(year);
 
 
 
@@ -87,7 +88,10 @@ Do the following:
 */
 
 // function dogYears()
-  /*add your code here*/
+  function dogYears(age){
+    return age * 7;
+  }
+  console.log("dogYears",dogYears(5));
 
 
 
@@ -119,7 +123,7 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(){
+function hungryDog(weight, age){
   if(age >= 1 && weight <=5){
     return weight * 0.05;
   }else if(age >= 1 && weight >=6 && weight <= 10){
@@ -128,11 +132,14 @@ function hungryDog(){
     return weight * 0.03;}
   else if (age >=1 && weight >= 15){
       return weight * 0.02;    
-      }else if(age >1 && age >= 0.333){
-        return weight * 0.05;
-      }else if (age > 0.333){
+      }else if(age <= 0.333){
         return weight * 0.1;
+      }else if (age > 0.333 && age <.583){
+        return weight * 0.05;        
+      }else if (age >= .583 && age <1){
+        return weight * .04;
       }
+    }
 console.log('task 3', hungryDog(15, 1));
   
 
@@ -269,4 +276,4 @@ module.exports = {
   feet,
   annoyingSong,
   grade
-}}
+}
