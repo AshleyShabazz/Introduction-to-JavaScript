@@ -35,6 +35,9 @@ Do the following:
 
    HINT: no function required
 */
+let hair = Curly;
+let style = straight;
+if (curly) hair && style == straight;
 
 
 
@@ -50,6 +53,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+let = "1999";
+Math.floor(1999);
+console.log(1999);
 
 
 
@@ -63,10 +69,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-// function multiply(a, b){
-//   return a*b; 
-// }
-// console.log(multiply(2,10));
+function multiply(a, b){
+  return a*b; 
+}
+console.log(multiply(2,10));
 
 
 
