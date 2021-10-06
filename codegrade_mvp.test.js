@@ -115,3 +115,4 @@ describe('gradeFunction', ()=>{
       expect(functions.grade(20)).toBe('you got an F');
   })
 });
+ 

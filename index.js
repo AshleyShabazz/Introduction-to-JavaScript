@@ -20,10 +20,13 @@ Do the following:
    HINT: no function required
 */
 
+const votingAge = 18;
+  if(votingAge >= 18){
+console.log(true);}
 
+ 
 
-/*
-Task 1b - Values
+/*Task 1b - Values
 
 Do the following:   
    1. Declare two variables and assign them values
@@ -60,9 +63,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
-}
+// function multiply(a, b){
+//   return a*b; 
+// }
+// console.log(multiply(2,10));
 
 
 
@@ -76,9 +80,9 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
+// function dogYears()
   /*add your code here*/
-}
+
 
 
 
@@ -109,9 +113,22 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
-}
+function hungryDog(){
+  if(age >= 1 && weight <=5){
+    return weight * 0.05;
+  }else if(age >= 1 && weight >=6 && weight <= 10){
+    return weight * 0.04;
+  }else if(age >=1 && weight >= 11 && weight <= 15){
+    return weight * 0.03;}
+  else if (age >=1 && weight >= 15){
+      return weight * 0.02;    
+      }else if(age >1 && age >= 0.333){
+        return weight * 0.05;
+      }else if (age > 0.333){
+        return weight * 0.1;
+      }
+console.log('task 3', hungryDog(15, 1));
+  
 
 
 
@@ -183,9 +200,10 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+  return
 }
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -245,4 +263,4 @@ module.exports = {
   feet,
   annoyingSong,
   grade
-}
+}}
